@@ -375,6 +375,7 @@ span#msg{
    }
 }
 @media (max-width:990px){
+    
     .header{
         padding: 2rem 3%;
     }
@@ -456,6 +457,9 @@ span#msg{
     }
  }
  @media (max-width:617px){
+   #menu-icon{
+    display: block;
+   }
 .portfolio-container{
     grid-template-columns: 1fr;
 }
