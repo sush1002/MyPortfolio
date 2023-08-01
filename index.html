@@ -189,7 +189,15 @@
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => 
             {
-                msg.innerHTML ="Form Submitted Succesfully"
+                  if (confirm("You sure you want to submit the form!"))
+                   {
+                             msg.innerHTML="Form submitted succesfully";
+
+                            }
+                              else {
+                                msg.innerHTML="Form submission cancelled!";
+                            }
+             //   msg.innerHTML ="Form Submitted Succesfully"
                 setTimeout(function(){
                     msg.innerHTML=""
                 },5000)
@@ -198,6 +206,8 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script src="Modal.js"></script>
+     
 </body>
 
     
